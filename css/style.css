@@ -1,0 +1,987 @@
+@charset "utf-8";
+/* CSS Document */
+html {font-size:62.5%;}
+body {
+	position: relative;
+    margin: 0 auto;
+	width:100%;
+	color:#FFFFFF;
+	font-size:18px;
+    font-size: 1.8rem;
+    line-height: 1;
+	font-family:'Rajdhani','Sans-serif',Arial,Helvetica,sans-serif,Verdana;
+    font-weight: 600;
+	background-color:#000000;
+}
+ol,ul{list-style-type:none;}
+img{max-width:100%;vertical-align: bottom;border:none}
+a {text-decoration:none;}
+/*普通链接颜色*/
+a:link {color:#FFFFFF;}
+/*访问过链接颜色*/
+a:visited {color:#FFFFFF;}
+/*鼠标经过的链接颜色*/
+a:hover{color:#F50;}
+/*点击鼠标未松开时、点击鼠标松开后的链接颜色*/
+a:active,a:focus{color:#FF1900;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear: both;*zoom:1;}
+.clear:after{content:"";display: block;height: 0;clear: both;overflow: hidden;visibility: hidden;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block;margin:0;padding:0}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+
+
+body{    
+    min-width: 320px;
+}
+.wrap{
+    margin: 0 auto;
+    width:90%;
+    max-width: 1140px;
+}
+
+
+.btn{
+    display: inline-block;
+    fill: #FFFFFF99;
+    color: #FFFFFF99 !important;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF00 100%);
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF99;
+    border-style: solid;    
+    border-radius: 3px 3px 3px 3px;
+    padding: 16px 32px 16px 32px;
+}
+.btn-red{
+    color: #FFFFFF !important;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #950C0C 0%, #f3c027 100%);
+    border-width: 0px 0px 0px 0px;
+}
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+header .wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2003034D;
+    border-radius: 30px 30px 30px 30px;
+    border-style: solid;
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    border-color: #3F3F3F;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 10px auto 0px auto;
+}
+header .logo{
+    width: 100%;
+    max-width: 16rem;
+    min-width: 13rem;
+    padding: 2rem 1rem;
+}
+#nav{    
+    flex: 1;
+}
+#m-menu-btn{
+    display: none;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: end;
+	padding-left: 50px;
+}
+#nav ul li{
+    margin: 0 1.5%;
+}
+#nav ul a{
+    display: block;
+    line-height: 1.5;
+}
+#nav ul a.active{
+    color: #E26363;
+    border-bottom: 4px solid #E46262;
+}
+
+
+#home{
+    padding: 15% 0;
+    background-image: url("../img/home-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home .wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#home .txt{
+    max-width: 524px;
+}
+#home .t1{
+    color: #f3c027;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#home .t2{
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#home .t3{
+    padding-bottom: 2rem;
+    line-height: 1.75;
+    color: #FFFDFD99;
+}
+
+
+#home .btn-red{
+    margin: 3%;
+}
+
+#home .btn i{
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    margin-left: 5px;
+    background-image: url("../img/arrow-rt.png");
+    background-position: center;
+    background-size: 100%;
+}
+
+
+.btn:hover {
+  animation-name: elementor-animation-bob-float,elementor-animation-bob;
+  animation-duration: .3s,1.5s;
+  animation-delay: 0s,.3s;
+  animation-timing-function: ease-out,ease-in-out;
+  animation-iteration-count: 1,infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal,alternate;
+}
+
+
+#home ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+#home ul li line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #50505099;
+}
+#home ul li span{
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+#home ul li p{
+    color: #FFFFFF99;
+}
+#home .img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: inline-block;
+    max-width: 425px;    
+}
+
+
+#home .img img{
+    width: 100%;
+    animation-name: upDown;
+    animation-duration:2s;
+    animation-iteration-count:infinite
+}
+
+#about{
+    padding-top: 10%;
+}
+#about .wrap{
+    display: flex;
+}
+#about .img{
+    width: 47%;
+    max-width: 429px;
+    padding: 0 3%;
+}
+#about .img img{
+    width: 100%;
+}
+#about .txt{
+    flex: 1;
+    padding: 7% 6% 7% 6%;
+    border-style: solid;
+    border-width: 1.5px 1.5px 1.5px 1.5px;
+    border-color: #3C3C3C;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 20px 20px 20px 20px;
+}
+#about h3{
+    font-size: 75px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#about .des{
+    margin: 5% auto 5% auto;
+    line-height: 1.5;
+    color: #FFFFFF99;
+}
+#about .btn-red{
+    margin: 3%
+}
+#about .btn-red i{
+    display: inline-block;
+    width: 18px;
+    height: 19px;
+    margin-left: 5px;
+    background-image: url("../img/file.png");
+    background-position: center;
+    background-size: 100%;
+}
+
+#token{
+    padding-top: 10%;
+}
+#token h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+#token .wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+#token .l{
+    width: 100%;
+}
+#token .l li{
+    padding: 4%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+    border: 1px solid #50505099;
+    background-image: url("../img/token-bg-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#token .l li:last-child{
+    margin: 0;
+}
+#token .l .des{
+    padding-top: 1.5rem;
+    line-height: 1.5;
+    color: #FFFFFF99;
+    font-weight: 400;
+}
+#token .r{
+    width: 100%;
+    max-width: 545px;
+    background-image: url("../img/token-bg-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 1px solid #50505099;
+}
+
+#roadmap{
+    margin-top: 10%;
+    padding-top: 5%;
+    background-image: url("../img/roadmap-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#roadmap .wrap{
+}
+#roadmap #roket{
+    position: relative;
+}
+#roadmap #roket .mark,
+#tokenomics .mark{
+    display: inline-block;
+    color: #E26363;
+    margin: 0px 0px 0px 0px;
+    padding: 7px 25px 7px 20px;
+    background-color: #FFFFFF1F;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF0D;
+    border-radius: 100px 100px 100px 100px;
+}
+#roadmap #roket .txt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 46rem;
+    text-align: right;
+}
+#roadmap #roket h3{
+    padding:8% 0 3% 0;
+    font-size: 75px;
+    font-weight: 600;
+}
+#roadmap #roket img{
+    width: 100%;
+    max-width: 309px;
+}
+#roadmap #roket .roket{
+    animation-name: roket;
+    animation-duration:3s;
+    animation-iteration-count:1;
+    animation-fill-mode: both;
+}
+#roadmap #roket .roket2{
+    animation-name: roket2;
+    animation-duration:3s;
+    animation-iteration-count:1;
+    animation-fill-mode: both;
+}
+
+@keyframes roket{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(100px,-100px);
+    }
+}
+@keyframes roket2{
+    from{
+        transform: translate(100px,-100px);;
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+
+
+#roadmap .course{
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: inherit;
+    border: 1px solid #FFFFFF29;
+    border-radius: 10px;
+}
+.roadmap-content{
+    margin-top: -100px;
+    opacity: 0;
+    padding: 4% 3% 10% 3%;
+}
+.roadmap-content ul li{
+    display: flex;
+    min-height: 142px;
+}
+.roadmap-content .info{
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+.roadmap-content .info .box{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.roadmap-content .txt{
+    padding: 15px;
+    background-color: #47060694;
+    border: 1px solid #FFFFFF29;
+    border-radius: 1.5rem;
+}
+.roadmap-content .t1{
+    margin-top: 5px;
+    color: #E26363;
+    font-size: 16px;
+    font-weight: 500;
+}
+.roadmap-content h4{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.roadmap-content .con{
+    line-height: 1.25;
+    margin-bottom: 32px;
+    color: #C0C0C0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.roadmap-content .split{
+    position: relative;
+    width: 1px;
+    margin: 0 3rem;
+    background-color: #FFFFFF29
+}
+.roadmap-content .circular{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.roadmap-content .circular.active{
+    background-color: #E26363;
+}
+.roadmap-content .split-b{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 2px;
+    height: 0%;
+    background-color: #E26363;
+    transition: all 0.4s ease-in-out;
+}
+.roadmap-content .triangle {
+    width: 0;
+    height: 0;
+    border-left: 12px solid #E26363;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.roadmap-content .info .r{
+    border-left: 0;
+    border-right: 12px solid #E26363;
+}
+
+#tokenomics{
+    opacity: 0;
+    margin-top: 200px;
+    padding: 10% 0;
+}
+#tokenomics .info{
+    display: flex;
+}
+#tokenomics .info .txt,
+#tokenomics .info .card{
+    width: 50%;
+}
+#tokenomics .txt{
+    padding: 3% 3% 0 3%;
+}
+#tokenomics .txt h3{
+    font-size: 75px;
+}
+#tokenomics .txt p{
+    padding: 5% 0 8% 0;
+    line-height: 1.5;
+    color: #C0C0C0;
+    font-weight: 500;
+}
+#tokenomics .txt .btn{
+    margin: 1.5% 3%;
+}
+#tokenomics .card{
+    background-color: transparent;
+    background-image: linear-gradient(264.28deg, #E26363 -38.2%, #950C0C 103.12%);
+    border-radius: 20px;
+}
+#tokenomics .card ul{
+    padding: 30px 30px 28px 30px;    
+}
+#tokenomics .card li{
+    display: flex;
+    padding: 23px 0px 19px 0px;
+    border-bottom: 1px solid #950C0C;
+}
+#tokenomics .card li label{
+    display: flex;
+    align-items: center;
+    width: 136px;
+    color: #C0C0C0;
+}
+#tokenomics .card li label i,
+#tokenomics .card li label svg{
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #E26363;
+    fill:#E26363;
+}
+#tokenomics .card li b{
+    font-size: 2.4rem;
+}
+
+#partners .wrap{
+    opacity: 0;
+    margin-top: 200px;
+    padding: 5% 0;
+    background-color: transparent;
+    background-image: linear-gradient(264.28deg, #0F0000 -38.2%, #f3c027 103.12%);
+    border: 1px dashed #FFFFFF63;
+    border-radius: 16px;
+}
+#partners h3{
+    text-align: center;
+    font-size: 75px;
+}
+#partners .link{
+    text-align: center;
+}
+#partners .link a{
+    display: inline-block;
+    margin: 0 2%;
+    padding: 2% 0;
+}
+#partners .link a img{
+    max-width: 252px;
+    min-width: 200px;
+    height: 45px;
+    padding: 1.5rem 3rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+footer{}
+.footer{
+    margin-top: 10%;
+    padding: 5% 2%;
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo{
+    max-width: 215px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-nav li{
+    margin: 2% 10px 0 10px;
+}
+.footer-share{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.footer-share a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    margin: 0 5px;
+    line-height: 39px;
+    border-radius: 100%;
+    background-color: #E26363;
+}
+.footer-share svg{
+    width: 2rem;
+    height: 2rem;
+    fill: #FFFFFF;
+}
+.footer-share a:hover{
+    background-color: #FFFFFF;
+}
+.footer-share a:hover svg{
+    fill: #E26363;
+}
+footer .copyright{
+    padding-top: 2%;
+    text-align: center;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 2% 0;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.footer-contact a{
+    color:#C0C0C0;
+}
+.footer-contact span{
+    border-bottom: 1px solid #C0C0C0;
+}
+
+#toTop{
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    z-index: 99999;
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #0f0000;
+}
+
+/*字体图标*/
+@font-face{font-family:jkiticon;src:url(../fonts/jkiticon.eot);src:url(../fonts/jkiticon.eot) format("embedded-opentype"),url(../fonts/jkiticon.woff2) format("woff2"),url(../fonts/jkiticon.woff) format("woff"),url(../fonts/jkiticon.ttf) format("truetype"),url(../fonts/jkiticon.svg) format("svg");font-weight:400;font-style:normal;font-display:block}[class*="jki jki-"]{font-family:jkiticon!important;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.jki-discord:before{content:"\ea8f"}
+
+@font-face{font-family:elementskit;src:url(../fonts/elementskit.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}.ekit-wid-con .fasicon,.ekit-wid-con .icon,.ekit-wid-con .icon::before,.fasicon,.icon,.icon::before{font-family:elementskit!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon.icon-coins::before{content:"\ebb0"}
+.icon.icon-arrow-up:before{content:"\e877"}
+.icon.icon-Computer::before{content:"\ebb1"}
+
+
+@keyframes elementor-animation-bob{0%{transform:translateY(-8px)}50%{transform:translateY(-4px)}100%{transform:translateY(-8px)}}
+@keyframes elementor-animation-bob-float{100%{transform:translateY(-8px)}}
+
+
+/*
+动效
+*/
+@keyframes upDown{
+    0%{transform: translateY(0px);}    
+    5%{transform: translateY(5px);}    
+    10%{transform: translateY(10px);}    
+    15%{transform: translateY(15px);}    
+    20%{transform: translateY(20px);}    
+    25%{transform: translateY(25px);}    
+    30%{transform: translateY(30px);}    
+    35%{transform: translateY(35px);}    
+    40%{transform: translateY(40px);}    
+    45%{transform: translateY(45px);}    
+    50%{transform: translateY(50px);}    
+    55%{transform: translateY(45px);}    
+    60%{transform: translateY(40px);}    
+    65%{transform: translateY(35px);}    
+    70%{transform: translateY(30px);}    
+    75%{transform: translateY(25px);}    
+    80%{transform: translateY(20px);}    
+    85%{transform: translateY(15px);}    
+    90%{transform: translateY(10px);}    
+    95%{transform: translateY(5px);}
+}
+
+/*
+手机版样式
+*/
+@media screen and (min-width:320px) and (max-width:800px){
+    #nav ul,
+    #home ul li line{
+        display: none;
+    }
+    #home .wrap,
+    #about .wrap,
+    #tokenomics .info{
+        display: block;
+    }
+    
+    #nav{
+    }
+    #m-menu-btn{
+        text-align: right;
+        display: block;
+    }
+    #m-menu-btn svg{
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 3rem;
+        fill:#FFFFFF;
+        cursor: pointer;
+    }
+    #nav ul{
+        position: fixed;
+        top: 9rem;
+        left: 0;
+        z-index: 99999;
+        width: 96%;
+        margin: 1% 2%;
+        background-color: #1A0202;
+        border:1px solid #FFFFFF36;
+        border-radius: 2rem;
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+        animation: all .3s backwards;
+    }
+    #nav ul li{
+        padding: 0 5%;
+        border-bottom: 1px solid #320d0d;
+    }
+    #nav ul a{
+        line-height: 3;
+    }
+    #nav ul a.active{
+        border: none;
+    }
+    
+    
+    #home .txt{
+        max-width: 100%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #home .txt .con li{
+        padding: 3% 0;
+    }
+    #home .txt .con li:nth-child(3){
+        padding-left: 10%;
+        padding-right: 10%;
+        border-top: 1px solid #50505099;
+        border-bottom: 1px solid #50505099;
+    }
+    #home ul li span{
+        font-size: 4rem;
+    }
+    #home .img{
+        position: inherit;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    #home .img img{
+        max-width: 48rem;
+    }
+    
+    #token .wrap{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #token .wrap .l,
+    #token .wrap .r{
+        max-width: none;
+        height: 100%;
+    }
+    #token .wrap .r{
+        min-height: 30rem;
+    }
+    #token .wrap .l{
+        margin-top: 6%;
+    }
+    
+    #roadmap #roket .txt{
+        position: inherit;
+        max-width: none;
+        text-align: center;
+    }
+    #roadmap #roket .txt h3{
+        font-size: 4rem;
+    }
+    
+    .roadmap-content{
+        padding: 10% 3% 10% 3%;
+    }
+    .roadmap-content .split{
+        margin: 0 1.5rem;
+    }
+    #q1,
+    #q1 .info .box,
+    #q3,
+    #q3 .info .box,
+    #q5,
+    #q5 .info .box
+    {
+        flex-direction:row-reverse;
+    }
+    #q1 .info:last-child,
+    #q2 .info:first-child,
+    #q3 .info:last-child,
+    #q4 .info:first-child,
+    #q5 .info:last-child
+    {
+        display: none;
+    }
+    .roadmap-content .info {
+        margin-bottom: 2rem;
+    }
+    .roadmap-content li:last-child .info{
+        margin-bottom: 0rem;
+    }
+    
+    #q1 .triangle,
+    #q3 .triangle,
+    #q5 .triangle{
+        transform: rotate(180deg);
+    }
+    .roadmap-content .info .box{
+        position: inherit;
+    }
+    
+    #tokenomics .txt h3{
+        font-size: 4rem;
+    }
+    #tokenomics .info .txt,
+    #tokenomics .info .card{
+        width: auto;
+        margin-bottom: 5%;
+    }
+    #tokenomics .info .txt{
+        margin-bottom: 5%;
+    }
+    
+    #partners .link a{
+        display: block;
+    }
+    
+    .footer-link{
+        display: block;
+        text-align: center;
+    }
+    .footer-logo{
+        display: inline-block;
+        max-width: 300px;
+    }
+    .footer-contact{
+        display: block;
+        line-height: 1.5;
+    }
+    .footer-contact a{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
